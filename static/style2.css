@@ -1,0 +1,25 @@
+body{
+  background-color: rgb(0, 0, 0);
+}
+    h1{
+      color:#ff0000;
+      padding: 10px 0;
+      text-align: center;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+h2{
+  color:rgb(187, 35, 35);
+  text-align:left;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+/*img{
+<img src="https://i.ytimg.com/vi/hUDcN1JBCYk/maxresdefault.jpg">;
+  
+
+  width: 300px;
+  height: 200px;
+}*/
+p{
+  color:white
+}
+  
