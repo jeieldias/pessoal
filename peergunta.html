@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+      <meta charset="UTF-8">
+</head>
+<body>
+      <ul>
+      <a href="index.html">Voltar</a>
+      </ul>
+
+   <h1>O QUIZ MAIS DIFÍCIL DO MUNDO</H1>
+   <form id="perguntaForm" onsubmit="return verificarResposta(event)">
+      <label for="resposta">Quanto é 1 + 1?</label>
+      <input type="number" id="resposta" required>
+
+      <input type="submit" value="Responder">
+   </form>
+   <p id="mensagem"></p>
+
+   <script>
+   function verificarResposta(event) {
+      event.preventDefault();
+      const resposta = document.getElementById('resposta').value;
+      const mensagem = document.getElementById('mensagem');
+      if (resposta == "2") {
+         mensagem.textContent = "TA CERTO";
+         mensagem.style.color = "green";
+      } else {
+         mensagem.textContent = "SÉRIO ISSO? TA ERRADO";
+         mensagem.style.color = "red";
+      }
+      return false;
+   }
+   </script>
+</body>
+</html>
